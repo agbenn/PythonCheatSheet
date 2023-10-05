@@ -1,0 +1,34 @@
+Categorical Vars 
+Ordinal: Level of some variable 
+Nominal: name based category: USA, Spain, Italy
+
+from sklearn.preprocessing import OneHotEncoder
+OneHotEncoder()
+	- fit_transform(df).to_array
+	- for Ordinal data
+LabelEncoder()
+	- encoder.fit_transform()
+	- for Nominal data
+
+pd.to_datetime()
+df.date_col.dt.year
+.str.split()
+
+
+Generate random data with normal distribution	
+	-np.random.normal()
+
+Compute distance of points to a specific point - good 
+	from scipy.spatial.distance import cdist
+	- cdist()
+
+Z-score standardization
+	(df[‘Age'] - df[‘Age'].mean()) / df[‘Age'].std()
+
+Min-max scaling
+	(value - min_value) / (max_value - min_value)
+
+
+
+
+
